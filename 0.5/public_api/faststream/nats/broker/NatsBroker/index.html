@@ -1,4 +1,4 @@
-<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="FastStream Python messaging framework documentation"><meta name=author content="AG2AI Inc."><link href=https://faststream.airt.ai/latest/public_api/faststream/nats/broker/NatsBroker/ rel=canonical><link rel=icon href=../../../../../assets/img/logo.svg><meta name=generator content="mkdocs-1.6.1, mkdocs-material-9.6.13"><title>NatsBroker - FastStream</title><link rel=stylesheet href=../../../../../assets/stylesheets/main.342714a4.min.css><link rel=stylesheet href=../../../../../assets/stylesheets/palette.06af60db.min.css><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style><link rel=stylesheet href=../../../../../css/timeago.css><link rel=stylesheet href=../../../../../assets/_mkdocstrings.css><link rel=stylesheet href=../../../../../stylesheets/extra.d5847d.min.css><script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><script id=__analytics>function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-HDTMP5FFHP"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-HDTMP5FFHP",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-HDTMP5FFHP",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script><script>"undefined"!=typeof __md_analytics&&__md_analytics()</script><meta property=og:type content=website><meta property=og:title content="FastStream - NatsBroker"><meta property=og:description content="FastStream Python messaging framework documentation"><meta content=https://faststream.airt.ai/latest/public_api/faststream/nats/broker/NatsBroker/ property=og:url><meta property=og:image content=https://opengraph.githubassets.com/1671805243.560327/ag2ai/faststream><meta property=og:image:type content=image/png><meta property=og:image:width content=1200><meta property=og:image:height content=630><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="FastStream - NatsBroker"><meta name=twitter:description content="FastStream Python messaging framework documentation"><meta name=twitter:image content=https://opengraph.githubassets.com/1671805243.560327/ag2ai/faststream><link href=../../../../../assets/stylesheets/glightbox.min.css rel=stylesheet><style>
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="FastStream Python messaging framework documentation"><meta name=author content="AG2AI Inc."><link href=https://faststream.airt.ai/latest/public_api/faststream/nats/broker/NatsBroker/ rel=canonical><link rel=icon href=../../../../../assets/img/logo.svg><meta name=generator content="mkdocs-1.6.1, mkdocs-material-9.6.14"><title>NatsBroker - FastStream</title><link rel=stylesheet href=../../../../../assets/stylesheets/main.342714a4.min.css><link rel=stylesheet href=../../../../../assets/stylesheets/palette.06af60db.min.css><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style><link rel=stylesheet href=../../../../../css/timeago.css><link rel=stylesheet href=../../../../../assets/_mkdocstrings.css><link rel=stylesheet href=../../../../../stylesheets/extra.d5847d.min.css><script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><script id=__analytics>function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-HDTMP5FFHP"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-HDTMP5FFHP",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-HDTMP5FFHP",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script><script>"undefined"!=typeof __md_analytics&&__md_analytics()</script><meta property=og:type content=website><meta property=og:title content="FastStream - NatsBroker"><meta property=og:description content="FastStream Python messaging framework documentation"><meta content=https://faststream.airt.ai/latest/public_api/faststream/nats/broker/NatsBroker/ property=og:url><meta property=og:image content=https://opengraph.githubassets.com/1671805243.560327/ag2ai/faststream><meta property=og:image:type content=image/png><meta property=og:image:width content=1200><meta property=og:image:height content=630><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="FastStream - NatsBroker"><meta name=twitter:description content="FastStream Python messaging framework documentation"><meta name=twitter:image content=https://opengraph.githubassets.com/1671805243.560327/ag2ai/faststream><link href=../../../../../assets/stylesheets/glightbox.min.css rel=stylesheet><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -1027,7 +1027,12 @@
 <span class=normal><a href=#__codelineno-0-259>259</a></span>
 <span class=normal><a href=#__codelineno-0-260>260</a></span>
 <span class=normal><a href=#__codelineno-0-261>261</a></span>
-<span class=normal><a href=#__codelineno-0-262>262</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-40 name=__codelineno-0-40></a><span class=nd>@override</span>
+<span class=normal><a href=#__codelineno-0-262>262</a></span>
+<span class=normal><a href=#__codelineno-0-263>263</a></span>
+<span class=normal><a href=#__codelineno-0-264>264</a></span>
+<span class=normal><a href=#__codelineno-0-265>265</a></span>
+<span class=normal><a href=#__codelineno-0-266>266</a></span>
+<span class=normal><a href=#__codelineno-0-267>267</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-40 name=__codelineno-0-40></a><span class=nd>@override</span>
 <a id=__codelineno-0-41 name=__codelineno-0-41></a><span class=k>def</span><span class=w> </span><span class=nf>subscriber</span><span class=p>(</span>  <span class=c1># type: ignore[override]</span>
 <a id=__codelineno-0-42 name=__codelineno-0-42></a>    <span class=bp>self</span><span class=p>,</span>
 <a id=__codelineno-0-43 name=__codelineno-0-43></a>    <span class=n>subject</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
@@ -1168,88 +1173,93 @@
 <a id=__codelineno-0-178 name=__codelineno-0-178></a>    <span class=n>retry</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
 <a id=__codelineno-0-179 name=__codelineno-0-179></a>        <span class=nb>bool</span><span class=p>,</span>
 <a id=__codelineno-0-180 name=__codelineno-0-180></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Whether to `nack` message at processing exception.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-181 name=__codelineno-0-181></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
-<a id=__codelineno-0-182 name=__codelineno-0-182></a>    <span class=n>no_ack</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-183 name=__codelineno-0-183></a>        <span class=nb>bool</span><span class=p>,</span>
-<a id=__codelineno-0-184 name=__codelineno-0-184></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Whether to disable **FastStream** autoacknowledgement logic or not.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-185 name=__codelineno-0-185></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
-<a id=__codelineno-0-186 name=__codelineno-0-186></a>    <span class=n>no_reply</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-187 name=__codelineno-0-187></a>        <span class=nb>bool</span><span class=p>,</span>
-<a id=__codelineno-0-188 name=__codelineno-0-188></a>        <span class=n>Doc</span><span class=p>(</span>
-<a id=__codelineno-0-189 name=__codelineno-0-189></a>            <span class=s2>&quot;Whether to disable **FastStream** RPC and Reply To auto responses or not.&quot;</span>
-<a id=__codelineno-0-190 name=__codelineno-0-190></a>        <span class=p>),</span>
-<a id=__codelineno-0-191 name=__codelineno-0-191></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
-<a id=__codelineno-0-192 name=__codelineno-0-192></a>    <span class=c1># AsyncAPI information</span>
-<a id=__codelineno-0-193 name=__codelineno-0-193></a>    <span class=n>title</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-194 name=__codelineno-0-194></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
-<a id=__codelineno-0-195 name=__codelineno-0-195></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;AsyncAPI subscriber object title.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-196 name=__codelineno-0-196></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-197 name=__codelineno-0-197></a>    <span class=n>description</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-198 name=__codelineno-0-198></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
-<a id=__codelineno-0-199 name=__codelineno-0-199></a>        <span class=n>Doc</span><span class=p>(</span>
-<a id=__codelineno-0-200 name=__codelineno-0-200></a>            <span class=s2>&quot;AsyncAPI subscriber object description. &quot;</span>
-<a id=__codelineno-0-201 name=__codelineno-0-201></a>            <span class=s2>&quot;Uses decorated docstring as default.&quot;</span>
-<a id=__codelineno-0-202 name=__codelineno-0-202></a>        <span class=p>),</span>
-<a id=__codelineno-0-203 name=__codelineno-0-203></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-204 name=__codelineno-0-204></a>    <span class=n>include_in_schema</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-205 name=__codelineno-0-205></a>        <span class=nb>bool</span><span class=p>,</span>
-<a id=__codelineno-0-206 name=__codelineno-0-206></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Whetever to include operation in AsyncAPI schema or not.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-207 name=__codelineno-0-207></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
-<a id=__codelineno-0-208 name=__codelineno-0-208></a><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>AsyncAPISubscriber</span><span class=p>:</span>
-<a id=__codelineno-0-209 name=__codelineno-0-209></a><span class=w>    </span><span class=sd>&quot;&quot;&quot;Creates NATS subscriber object.</span>
-<a id=__codelineno-0-210 name=__codelineno-0-210></a>
-<a id=__codelineno-0-211 name=__codelineno-0-211></a><span class=sd>    You can use it as a handler decorator `@broker.subscriber(...)`.</span>
-<a id=__codelineno-0-212 name=__codelineno-0-212></a><span class=sd>    &quot;&quot;&quot;</span>
-<a id=__codelineno-0-213 name=__codelineno-0-213></a>    <span class=n>stream</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>create</span><span class=p>(</span><span class=n>stream</span><span class=p>)</span>
-<a id=__codelineno-0-214 name=__codelineno-0-214></a>
-<a id=__codelineno-0-215 name=__codelineno-0-215></a>    <span class=n>subscriber</span> <span class=o>=</span> <span class=n>cast</span><span class=p>(</span>
-<a id=__codelineno-0-216 name=__codelineno-0-216></a>        <span class=s2>&quot;AsyncAPISubscriber&quot;</span><span class=p>,</span>
-<a id=__codelineno-0-217 name=__codelineno-0-217></a>        <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=n>subscriber</span><span class=p>(</span>
-<a id=__codelineno-0-218 name=__codelineno-0-218></a>            <span class=n>create_subscriber</span><span class=p>(</span>
-<a id=__codelineno-0-219 name=__codelineno-0-219></a>                <span class=n>subject</span><span class=o>=</span><span class=n>subject</span><span class=p>,</span>
-<a id=__codelineno-0-220 name=__codelineno-0-220></a>                <span class=n>queue</span><span class=o>=</span><span class=n>queue</span><span class=p>,</span>
-<a id=__codelineno-0-221 name=__codelineno-0-221></a>                <span class=n>stream</span><span class=o>=</span><span class=n>stream</span><span class=p>,</span>
-<a id=__codelineno-0-222 name=__codelineno-0-222></a>                <span class=n>pull_sub</span><span class=o>=</span><span class=n>PullSub</span><span class=o>.</span><span class=n>validate</span><span class=p>(</span><span class=n>pull_sub</span><span class=p>),</span>
-<a id=__codelineno-0-223 name=__codelineno-0-223></a>                <span class=n>kv_watch</span><span class=o>=</span><span class=n>KvWatch</span><span class=o>.</span><span class=n>validate</span><span class=p>(</span><span class=n>kv_watch</span><span class=p>),</span>
-<a id=__codelineno-0-224 name=__codelineno-0-224></a>                <span class=n>obj_watch</span><span class=o>=</span><span class=n>ObjWatch</span><span class=o>.</span><span class=n>validate</span><span class=p>(</span><span class=n>obj_watch</span><span class=p>),</span>
-<a id=__codelineno-0-225 name=__codelineno-0-225></a>                <span class=n>max_workers</span><span class=o>=</span><span class=n>max_workers</span><span class=p>,</span>
-<a id=__codelineno-0-226 name=__codelineno-0-226></a>                <span class=c1># extra args</span>
-<a id=__codelineno-0-227 name=__codelineno-0-227></a>                <span class=n>pending_msgs_limit</span><span class=o>=</span><span class=n>pending_msgs_limit</span><span class=p>,</span>
-<a id=__codelineno-0-228 name=__codelineno-0-228></a>                <span class=n>pending_bytes_limit</span><span class=o>=</span><span class=n>pending_bytes_limit</span><span class=p>,</span>
-<a id=__codelineno-0-229 name=__codelineno-0-229></a>                <span class=n>max_msgs</span><span class=o>=</span><span class=n>max_msgs</span><span class=p>,</span>
-<a id=__codelineno-0-230 name=__codelineno-0-230></a>                <span class=n>durable</span><span class=o>=</span><span class=n>durable</span><span class=p>,</span>
-<a id=__codelineno-0-231 name=__codelineno-0-231></a>                <span class=n>config</span><span class=o>=</span><span class=n>config</span><span class=p>,</span>
-<a id=__codelineno-0-232 name=__codelineno-0-232></a>                <span class=n>ordered_consumer</span><span class=o>=</span><span class=n>ordered_consumer</span><span class=p>,</span>
-<a id=__codelineno-0-233 name=__codelineno-0-233></a>                <span class=n>idle_heartbeat</span><span class=o>=</span><span class=n>idle_heartbeat</span><span class=p>,</span>
-<a id=__codelineno-0-234 name=__codelineno-0-234></a>                <span class=n>flow_control</span><span class=o>=</span><span class=n>flow_control</span><span class=p>,</span>
-<a id=__codelineno-0-235 name=__codelineno-0-235></a>                <span class=n>deliver_policy</span><span class=o>=</span><span class=n>deliver_policy</span><span class=p>,</span>
-<a id=__codelineno-0-236 name=__codelineno-0-236></a>                <span class=n>headers_only</span><span class=o>=</span><span class=n>headers_only</span><span class=p>,</span>
-<a id=__codelineno-0-237 name=__codelineno-0-237></a>                <span class=n>inbox_prefix</span><span class=o>=</span><span class=n>inbox_prefix</span><span class=p>,</span>
-<a id=__codelineno-0-238 name=__codelineno-0-238></a>                <span class=n>ack_first</span><span class=o>=</span><span class=n>ack_first</span><span class=p>,</span>
-<a id=__codelineno-0-239 name=__codelineno-0-239></a>                <span class=c1># subscriber args</span>
-<a id=__codelineno-0-240 name=__codelineno-0-240></a>                <span class=n>no_ack</span><span class=o>=</span><span class=n>no_ack</span><span class=p>,</span>
-<a id=__codelineno-0-241 name=__codelineno-0-241></a>                <span class=n>no_reply</span><span class=o>=</span><span class=n>no_reply</span><span class=p>,</span>
-<a id=__codelineno-0-242 name=__codelineno-0-242></a>                <span class=n>retry</span><span class=o>=</span><span class=n>retry</span><span class=p>,</span>
-<a id=__codelineno-0-243 name=__codelineno-0-243></a>                <span class=n>broker_middlewares</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_middlewares</span><span class=p>,</span>
-<a id=__codelineno-0-244 name=__codelineno-0-244></a>                <span class=n>broker_dependencies</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_dependencies</span><span class=p>,</span>
-<a id=__codelineno-0-245 name=__codelineno-0-245></a>                <span class=c1># AsyncAPI</span>
-<a id=__codelineno-0-246 name=__codelineno-0-246></a>                <span class=n>title_</span><span class=o>=</span><span class=n>title</span><span class=p>,</span>
-<a id=__codelineno-0-247 name=__codelineno-0-247></a>                <span class=n>description_</span><span class=o>=</span><span class=n>description</span><span class=p>,</span>
-<a id=__codelineno-0-248 name=__codelineno-0-248></a>                <span class=n>include_in_schema</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_solve_include_in_schema</span><span class=p>(</span><span class=n>include_in_schema</span><span class=p>),</span>
-<a id=__codelineno-0-249 name=__codelineno-0-249></a>            <span class=p>)</span>
-<a id=__codelineno-0-250 name=__codelineno-0-250></a>        <span class=p>),</span>
-<a id=__codelineno-0-251 name=__codelineno-0-251></a>    <span class=p>)</span>
-<a id=__codelineno-0-252 name=__codelineno-0-252></a>
-<a id=__codelineno-0-253 name=__codelineno-0-253></a>    <span class=k>if</span> <span class=n>stream</span> <span class=ow>and</span> <span class=n>subscriber</span><span class=o>.</span><span class=n>subject</span><span class=p>:</span>
-<a id=__codelineno-0-254 name=__codelineno-0-254></a>        <span class=n>stream</span><span class=o>.</span><span class=n>add_subject</span><span class=p>(</span><span class=n>subscriber</span><span class=o>.</span><span class=n>subject</span><span class=p>)</span>
-<a id=__codelineno-0-255 name=__codelineno-0-255></a>
-<a id=__codelineno-0-256 name=__codelineno-0-256></a>    <span class=k>return</span> <span class=n>subscriber</span><span class=o>.</span><span class=n>add_call</span><span class=p>(</span>
-<a id=__codelineno-0-257 name=__codelineno-0-257></a>        <span class=n>filter_</span><span class=o>=</span><span class=nb>filter</span><span class=p>,</span>
-<a id=__codelineno-0-258 name=__codelineno-0-258></a>        <span class=n>parser_</span><span class=o>=</span><span class=n>parser</span> <span class=ow>or</span> <span class=bp>self</span><span class=o>.</span><span class=n>_parser</span><span class=p>,</span>
-<a id=__codelineno-0-259 name=__codelineno-0-259></a>        <span class=n>decoder_</span><span class=o>=</span><span class=n>decoder</span> <span class=ow>or</span> <span class=bp>self</span><span class=o>.</span><span class=n>_decoder</span><span class=p>,</span>
-<a id=__codelineno-0-260 name=__codelineno-0-260></a>        <span class=n>dependencies_</span><span class=o>=</span><span class=n>dependencies</span><span class=p>,</span>
-<a id=__codelineno-0-261 name=__codelineno-0-261></a>        <span class=n>middlewares_</span><span class=o>=</span><span class=n>middlewares</span><span class=p>,</span>
-<a id=__codelineno-0-262 name=__codelineno-0-262></a>    <span class=p>)</span>
+<a id=__codelineno-0-181 name=__codelineno-0-181></a>        <span class=n>deprecated</span><span class=p>(</span>
+<a id=__codelineno-0-182 name=__codelineno-0-182></a>            <span class=s2>&quot;Deprecated in **FastStream 0.5.40**.&quot;</span>
+<a id=__codelineno-0-183 name=__codelineno-0-183></a>            <span class=s2>&quot;Please, manage acknowledgement policy manually.&quot;</span>
+<a id=__codelineno-0-184 name=__codelineno-0-184></a>            <span class=s2>&quot;Argument will be removed in **FastStream 0.6.0**.&quot;</span>
+<a id=__codelineno-0-185 name=__codelineno-0-185></a>        <span class=p>),</span>
+<a id=__codelineno-0-186 name=__codelineno-0-186></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
+<a id=__codelineno-0-187 name=__codelineno-0-187></a>    <span class=n>no_ack</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-188 name=__codelineno-0-188></a>        <span class=nb>bool</span><span class=p>,</span>
+<a id=__codelineno-0-189 name=__codelineno-0-189></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Whether to disable **FastStream** autoacknowledgement logic or not.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-190 name=__codelineno-0-190></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
+<a id=__codelineno-0-191 name=__codelineno-0-191></a>    <span class=n>no_reply</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-192 name=__codelineno-0-192></a>        <span class=nb>bool</span><span class=p>,</span>
+<a id=__codelineno-0-193 name=__codelineno-0-193></a>        <span class=n>Doc</span><span class=p>(</span>
+<a id=__codelineno-0-194 name=__codelineno-0-194></a>            <span class=s2>&quot;Whether to disable **FastStream** RPC and Reply To auto responses or not.&quot;</span>
+<a id=__codelineno-0-195 name=__codelineno-0-195></a>        <span class=p>),</span>
+<a id=__codelineno-0-196 name=__codelineno-0-196></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>False</span><span class=p>,</span>
+<a id=__codelineno-0-197 name=__codelineno-0-197></a>    <span class=c1># AsyncAPI information</span>
+<a id=__codelineno-0-198 name=__codelineno-0-198></a>    <span class=n>title</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-199 name=__codelineno-0-199></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
+<a id=__codelineno-0-200 name=__codelineno-0-200></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;AsyncAPI subscriber object title.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-201 name=__codelineno-0-201></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-202 name=__codelineno-0-202></a>    <span class=n>description</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-203 name=__codelineno-0-203></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
+<a id=__codelineno-0-204 name=__codelineno-0-204></a>        <span class=n>Doc</span><span class=p>(</span>
+<a id=__codelineno-0-205 name=__codelineno-0-205></a>            <span class=s2>&quot;AsyncAPI subscriber object description. &quot;</span>
+<a id=__codelineno-0-206 name=__codelineno-0-206></a>            <span class=s2>&quot;Uses decorated docstring as default.&quot;</span>
+<a id=__codelineno-0-207 name=__codelineno-0-207></a>        <span class=p>),</span>
+<a id=__codelineno-0-208 name=__codelineno-0-208></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-209 name=__codelineno-0-209></a>    <span class=n>include_in_schema</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-210 name=__codelineno-0-210></a>        <span class=nb>bool</span><span class=p>,</span>
+<a id=__codelineno-0-211 name=__codelineno-0-211></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Whetever to include operation in AsyncAPI schema or not.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-212 name=__codelineno-0-212></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
+<a id=__codelineno-0-213 name=__codelineno-0-213></a><span class=p>)</span> <span class=o>-&gt;</span> <span class=n>AsyncAPISubscriber</span><span class=p>:</span>
+<a id=__codelineno-0-214 name=__codelineno-0-214></a><span class=w>    </span><span class=sd>&quot;&quot;&quot;Creates NATS subscriber object.</span>
+<a id=__codelineno-0-215 name=__codelineno-0-215></a>
+<a id=__codelineno-0-216 name=__codelineno-0-216></a><span class=sd>    You can use it as a handler decorator `@broker.subscriber(...)`.</span>
+<a id=__codelineno-0-217 name=__codelineno-0-217></a><span class=sd>    &quot;&quot;&quot;</span>
+<a id=__codelineno-0-218 name=__codelineno-0-218></a>    <span class=n>stream</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>create</span><span class=p>(</span><span class=n>stream</span><span class=p>)</span>
+<a id=__codelineno-0-219 name=__codelineno-0-219></a>
+<a id=__codelineno-0-220 name=__codelineno-0-220></a>    <span class=n>subscriber</span> <span class=o>=</span> <span class=n>cast</span><span class=p>(</span>
+<a id=__codelineno-0-221 name=__codelineno-0-221></a>        <span class=s2>&quot;AsyncAPISubscriber&quot;</span><span class=p>,</span>
+<a id=__codelineno-0-222 name=__codelineno-0-222></a>        <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=n>subscriber</span><span class=p>(</span>
+<a id=__codelineno-0-223 name=__codelineno-0-223></a>            <span class=n>create_subscriber</span><span class=p>(</span>
+<a id=__codelineno-0-224 name=__codelineno-0-224></a>                <span class=n>subject</span><span class=o>=</span><span class=n>subject</span><span class=p>,</span>
+<a id=__codelineno-0-225 name=__codelineno-0-225></a>                <span class=n>queue</span><span class=o>=</span><span class=n>queue</span><span class=p>,</span>
+<a id=__codelineno-0-226 name=__codelineno-0-226></a>                <span class=n>stream</span><span class=o>=</span><span class=n>stream</span><span class=p>,</span>
+<a id=__codelineno-0-227 name=__codelineno-0-227></a>                <span class=n>pull_sub</span><span class=o>=</span><span class=n>PullSub</span><span class=o>.</span><span class=n>validate</span><span class=p>(</span><span class=n>pull_sub</span><span class=p>),</span>
+<a id=__codelineno-0-228 name=__codelineno-0-228></a>                <span class=n>kv_watch</span><span class=o>=</span><span class=n>KvWatch</span><span class=o>.</span><span class=n>validate</span><span class=p>(</span><span class=n>kv_watch</span><span class=p>),</span>
+<a id=__codelineno-0-229 name=__codelineno-0-229></a>                <span class=n>obj_watch</span><span class=o>=</span><span class=n>ObjWatch</span><span class=o>.</span><span class=n>validate</span><span class=p>(</span><span class=n>obj_watch</span><span class=p>),</span>
+<a id=__codelineno-0-230 name=__codelineno-0-230></a>                <span class=n>max_workers</span><span class=o>=</span><span class=n>max_workers</span><span class=p>,</span>
+<a id=__codelineno-0-231 name=__codelineno-0-231></a>                <span class=c1># extra args</span>
+<a id=__codelineno-0-232 name=__codelineno-0-232></a>                <span class=n>pending_msgs_limit</span><span class=o>=</span><span class=n>pending_msgs_limit</span><span class=p>,</span>
+<a id=__codelineno-0-233 name=__codelineno-0-233></a>                <span class=n>pending_bytes_limit</span><span class=o>=</span><span class=n>pending_bytes_limit</span><span class=p>,</span>
+<a id=__codelineno-0-234 name=__codelineno-0-234></a>                <span class=n>max_msgs</span><span class=o>=</span><span class=n>max_msgs</span><span class=p>,</span>
+<a id=__codelineno-0-235 name=__codelineno-0-235></a>                <span class=n>durable</span><span class=o>=</span><span class=n>durable</span><span class=p>,</span>
+<a id=__codelineno-0-236 name=__codelineno-0-236></a>                <span class=n>config</span><span class=o>=</span><span class=n>config</span><span class=p>,</span>
+<a id=__codelineno-0-237 name=__codelineno-0-237></a>                <span class=n>ordered_consumer</span><span class=o>=</span><span class=n>ordered_consumer</span><span class=p>,</span>
+<a id=__codelineno-0-238 name=__codelineno-0-238></a>                <span class=n>idle_heartbeat</span><span class=o>=</span><span class=n>idle_heartbeat</span><span class=p>,</span>
+<a id=__codelineno-0-239 name=__codelineno-0-239></a>                <span class=n>flow_control</span><span class=o>=</span><span class=n>flow_control</span><span class=p>,</span>
+<a id=__codelineno-0-240 name=__codelineno-0-240></a>                <span class=n>deliver_policy</span><span class=o>=</span><span class=n>deliver_policy</span><span class=p>,</span>
+<a id=__codelineno-0-241 name=__codelineno-0-241></a>                <span class=n>headers_only</span><span class=o>=</span><span class=n>headers_only</span><span class=p>,</span>
+<a id=__codelineno-0-242 name=__codelineno-0-242></a>                <span class=n>inbox_prefix</span><span class=o>=</span><span class=n>inbox_prefix</span><span class=p>,</span>
+<a id=__codelineno-0-243 name=__codelineno-0-243></a>                <span class=n>ack_first</span><span class=o>=</span><span class=n>ack_first</span><span class=p>,</span>
+<a id=__codelineno-0-244 name=__codelineno-0-244></a>                <span class=c1># subscriber args</span>
+<a id=__codelineno-0-245 name=__codelineno-0-245></a>                <span class=n>no_ack</span><span class=o>=</span><span class=n>no_ack</span><span class=p>,</span>
+<a id=__codelineno-0-246 name=__codelineno-0-246></a>                <span class=n>no_reply</span><span class=o>=</span><span class=n>no_reply</span><span class=p>,</span>
+<a id=__codelineno-0-247 name=__codelineno-0-247></a>                <span class=n>retry</span><span class=o>=</span><span class=n>retry</span><span class=p>,</span>
+<a id=__codelineno-0-248 name=__codelineno-0-248></a>                <span class=n>broker_middlewares</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_middlewares</span><span class=p>,</span>
+<a id=__codelineno-0-249 name=__codelineno-0-249></a>                <span class=n>broker_dependencies</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_dependencies</span><span class=p>,</span>
+<a id=__codelineno-0-250 name=__codelineno-0-250></a>                <span class=c1># AsyncAPI</span>
+<a id=__codelineno-0-251 name=__codelineno-0-251></a>                <span class=n>title_</span><span class=o>=</span><span class=n>title</span><span class=p>,</span>
+<a id=__codelineno-0-252 name=__codelineno-0-252></a>                <span class=n>description_</span><span class=o>=</span><span class=n>description</span><span class=p>,</span>
+<a id=__codelineno-0-253 name=__codelineno-0-253></a>                <span class=n>include_in_schema</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_solve_include_in_schema</span><span class=p>(</span><span class=n>include_in_schema</span><span class=p>),</span>
+<a id=__codelineno-0-254 name=__codelineno-0-254></a>            <span class=p>)</span>
+<a id=__codelineno-0-255 name=__codelineno-0-255></a>        <span class=p>),</span>
+<a id=__codelineno-0-256 name=__codelineno-0-256></a>    <span class=p>)</span>
+<a id=__codelineno-0-257 name=__codelineno-0-257></a>
+<a id=__codelineno-0-258 name=__codelineno-0-258></a>    <span class=k>if</span> <span class=n>stream</span> <span class=ow>and</span> <span class=n>subscriber</span><span class=o>.</span><span class=n>subject</span><span class=p>:</span>
+<a id=__codelineno-0-259 name=__codelineno-0-259></a>        <span class=n>stream</span><span class=o>.</span><span class=n>add_subject</span><span class=p>(</span><span class=n>subscriber</span><span class=o>.</span><span class=n>subject</span><span class=p>)</span>
+<a id=__codelineno-0-260 name=__codelineno-0-260></a>
+<a id=__codelineno-0-261 name=__codelineno-0-261></a>    <span class=k>return</span> <span class=n>subscriber</span><span class=o>.</span><span class=n>add_call</span><span class=p>(</span>
+<a id=__codelineno-0-262 name=__codelineno-0-262></a>        <span class=n>filter_</span><span class=o>=</span><span class=nb>filter</span><span class=p>,</span>
+<a id=__codelineno-0-263 name=__codelineno-0-263></a>        <span class=n>parser_</span><span class=o>=</span><span class=n>parser</span> <span class=ow>or</span> <span class=bp>self</span><span class=o>.</span><span class=n>_parser</span><span class=p>,</span>
+<a id=__codelineno-0-264 name=__codelineno-0-264></a>        <span class=n>decoder_</span><span class=o>=</span><span class=n>decoder</span> <span class=ow>or</span> <span class=bp>self</span><span class=o>.</span><span class=n>_decoder</span><span class=p>,</span>
+<a id=__codelineno-0-265 name=__codelineno-0-265></a>        <span class=n>dependencies_</span><span class=o>=</span><span class=n>dependencies</span><span class=p>,</span>
+<a id=__codelineno-0-266 name=__codelineno-0-266></a>        <span class=n>middlewares_</span><span class=o>=</span><span class=n>middlewares</span><span class=p>,</span>
+<a id=__codelineno-0-267 name=__codelineno-0-267></a>    <span class=p>)</span>
 </code></pre></div></td></tr></table></div> </details> </div> </div> <div class="doc doc-object doc-function"> <h3 id=faststream.nats.broker.NatsBroker.publisher class="doc doc-heading"> <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <span class="doc doc-object-name doc-function-name">publisher</span> <a href=#faststream.nats.broker.NatsBroker.publisher class=headerlink title="Permanent link">#</a></h3> <div class="doc-signature highlight"><pre><span></span><code><a id=__codelineno-0-1 name=__codelineno-0-1 href=#__codelineno-0-1></a><span class=nf>publisher</span><span class=p>(</span>
 <a id=__codelineno-0-2 name=__codelineno-0-2 href=#__codelineno-0-2></a>    <span class=n>subject</span><span class=p>,</span>
 <a id=__codelineno-0-3 name=__codelineno-0-3 href=#__codelineno-0-3></a>    <span class=o>*</span><span class=p>,</span>
@@ -1263,12 +1273,7 @@
 <a id=__codelineno-0-11 name=__codelineno-0-11 href=#__codelineno-0-11></a>    <span class=n>schema</span><span class=o>=</span><span class=kc>None</span><span class=p>,</span>
 <a id=__codelineno-0-12 name=__codelineno-0-12 href=#__codelineno-0-12></a>    <span class=n>include_in_schema</span><span class=o>=</span><span class=kc>True</span><span class=p>,</span>
 <a id=__codelineno-0-13 name=__codelineno-0-13 href=#__codelineno-0-13></a><span class=p>)</span>
-</code></pre></div> <div class="doc doc-contents "> <p>Creates long-living and AsyncAPI-documented publisher object.</p> <p>You can use it as a handler decorator (handler should be decorated by <code>@broker.subscriber(...)</code> too) - <code>@broker.publisher(...)</code>. In such case publisher will publish your handler return value.</p> <p>Or you can create a publisher object to call it lately - <code>broker.publisher(...).publish(...)</code>.</p> <details class=quote> <summary>Source code in <code>faststream/nats/broker/registrator.py</code></summary> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-0-264>264</a></span>
-<span class=normal><a href=#__codelineno-0-265>265</a></span>
-<span class=normal><a href=#__codelineno-0-266>266</a></span>
-<span class=normal><a href=#__codelineno-0-267>267</a></span>
-<span class=normal><a href=#__codelineno-0-268>268</a></span>
-<span class=normal><a href=#__codelineno-0-269>269</a></span>
+</code></pre></div> <div class="doc doc-contents "> <p>Creates long-living and AsyncAPI-documented publisher object.</p> <p>You can use it as a handler decorator (handler should be decorated by <code>@broker.subscriber(...)</code> too) - <code>@broker.publisher(...)</code>. In such case publisher will publish your handler return value.</p> <p>Or you can create a publisher object to call it lately - <code>broker.publisher(...).publish(...)</code>.</p> <details class=quote> <summary>Source code in <code>faststream/nats/broker/registrator.py</code></summary> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-0-269>269</a></span>
 <span class=normal><a href=#__codelineno-0-270>270</a></span>
 <span class=normal><a href=#__codelineno-0-271>271</a></span>
 <span class=normal><a href=#__codelineno-0-272>272</a></span>
@@ -1356,100 +1361,105 @@
 <span class=normal><a href=#__codelineno-0-354>354</a></span>
 <span class=normal><a href=#__codelineno-0-355>355</a></span>
 <span class=normal><a href=#__codelineno-0-356>356</a></span>
-<span class=normal><a href=#__codelineno-0-357>357</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-264 name=__codelineno-0-264></a><span class=nd>@override</span>
-<a id=__codelineno-0-265 name=__codelineno-0-265></a><span class=k>def</span><span class=w> </span><span class=nf>publisher</span><span class=p>(</span>  <span class=c1># type: ignore[override]</span>
-<a id=__codelineno-0-266 name=__codelineno-0-266></a>    <span class=bp>self</span><span class=p>,</span>
-<a id=__codelineno-0-267 name=__codelineno-0-267></a>    <span class=n>subject</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-268 name=__codelineno-0-268></a>        <span class=nb>str</span><span class=p>,</span>
-<a id=__codelineno-0-269 name=__codelineno-0-269></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;NATS subject to send message.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-270 name=__codelineno-0-270></a>    <span class=p>],</span>
-<a id=__codelineno-0-271 name=__codelineno-0-271></a>    <span class=o>*</span><span class=p>,</span>
-<a id=__codelineno-0-272 name=__codelineno-0-272></a>    <span class=n>headers</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-273 name=__codelineno-0-273></a>        <span class=n>Optional</span><span class=p>[</span><span class=n>Dict</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=nb>str</span><span class=p>]],</span>
-<a id=__codelineno-0-274 name=__codelineno-0-274></a>        <span class=n>Doc</span><span class=p>(</span>
-<a id=__codelineno-0-275 name=__codelineno-0-275></a>            <span class=s2>&quot;Message headers to store metainformation. &quot;</span>
-<a id=__codelineno-0-276 name=__codelineno-0-276></a>            <span class=s2>&quot;**content-type** and **correlation_id** will be set automatically by framework anyway. &quot;</span>
-<a id=__codelineno-0-277 name=__codelineno-0-277></a>            <span class=s2>&quot;Can be overridden by `publish.headers` if specified.&quot;</span>
-<a id=__codelineno-0-278 name=__codelineno-0-278></a>        <span class=p>),</span>
-<a id=__codelineno-0-279 name=__codelineno-0-279></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-280 name=__codelineno-0-280></a>    <span class=n>reply_to</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-281 name=__codelineno-0-281></a>        <span class=nb>str</span><span class=p>,</span>
-<a id=__codelineno-0-282 name=__codelineno-0-282></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;NATS subject name to send response.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-283 name=__codelineno-0-283></a>    <span class=p>]</span> <span class=o>=</span> <span class=s2>&quot;&quot;</span><span class=p>,</span>
-<a id=__codelineno-0-284 name=__codelineno-0-284></a>    <span class=c1># JS</span>
-<a id=__codelineno-0-285 name=__codelineno-0-285></a>    <span class=n>stream</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-286 name=__codelineno-0-286></a>        <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=s2>&quot;JStream&quot;</span><span class=p>,</span> <span class=kc>None</span><span class=p>],</span>
-<a id=__codelineno-0-287 name=__codelineno-0-287></a>        <span class=n>Doc</span><span class=p>(</span>
-<a id=__codelineno-0-288 name=__codelineno-0-288></a>            <span class=s2>&quot;This option validates that the target `subject` is in presented stream. &quot;</span>
-<a id=__codelineno-0-289 name=__codelineno-0-289></a>            <span class=s2>&quot;Can be omitted without any effect.&quot;</span>
-<a id=__codelineno-0-290 name=__codelineno-0-290></a>        <span class=p>),</span>
-<a id=__codelineno-0-291 name=__codelineno-0-291></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-292 name=__codelineno-0-292></a>    <span class=n>timeout</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-293 name=__codelineno-0-293></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>float</span><span class=p>],</span>
-<a id=__codelineno-0-294 name=__codelineno-0-294></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Timeout to send message to NATS.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-295 name=__codelineno-0-295></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-296 name=__codelineno-0-296></a>    <span class=c1># basic args</span>
-<a id=__codelineno-0-297 name=__codelineno-0-297></a>    <span class=n>middlewares</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-298 name=__codelineno-0-298></a>        <span class=n>Sequence</span><span class=p>[</span><span class=s2>&quot;PublisherMiddleware&quot;</span><span class=p>],</span>
-<a id=__codelineno-0-299 name=__codelineno-0-299></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Publisher middlewares to wrap outgoing messages.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-300 name=__codelineno-0-300></a>    <span class=p>]</span> <span class=o>=</span> <span class=p>(),</span>
-<a id=__codelineno-0-301 name=__codelineno-0-301></a>    <span class=c1># AsyncAPI information</span>
-<a id=__codelineno-0-302 name=__codelineno-0-302></a>    <span class=n>title</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-303 name=__codelineno-0-303></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
-<a id=__codelineno-0-304 name=__codelineno-0-304></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;AsyncAPI publisher object title.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-305 name=__codelineno-0-305></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-306 name=__codelineno-0-306></a>    <span class=n>description</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-307 name=__codelineno-0-307></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
-<a id=__codelineno-0-308 name=__codelineno-0-308></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;AsyncAPI publisher object description.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-309 name=__codelineno-0-309></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-310 name=__codelineno-0-310></a>    <span class=n>schema</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-311 name=__codelineno-0-311></a>        <span class=n>Optional</span><span class=p>[</span><span class=n>Any</span><span class=p>],</span>
-<a id=__codelineno-0-312 name=__codelineno-0-312></a>        <span class=n>Doc</span><span class=p>(</span>
-<a id=__codelineno-0-313 name=__codelineno-0-313></a>            <span class=s2>&quot;AsyncAPI publishing message type. &quot;</span>
-<a id=__codelineno-0-314 name=__codelineno-0-314></a>            <span class=s2>&quot;Should be any python-native object annotation or `pydantic.BaseModel`.&quot;</span>
-<a id=__codelineno-0-315 name=__codelineno-0-315></a>        <span class=p>),</span>
-<a id=__codelineno-0-316 name=__codelineno-0-316></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-317 name=__codelineno-0-317></a>    <span class=n>include_in_schema</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
-<a id=__codelineno-0-318 name=__codelineno-0-318></a>        <span class=nb>bool</span><span class=p>,</span>
-<a id=__codelineno-0-319 name=__codelineno-0-319></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Whetever to include operation in AsyncAPI schema or not.&quot;</span><span class=p>),</span>
-<a id=__codelineno-0-320 name=__codelineno-0-320></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
-<a id=__codelineno-0-321 name=__codelineno-0-321></a><span class=p>)</span> <span class=o>-&gt;</span> <span class=s2>&quot;AsyncAPIPublisher&quot;</span><span class=p>:</span>
-<a id=__codelineno-0-322 name=__codelineno-0-322></a><span class=w>    </span><span class=sd>&quot;&quot;&quot;Creates long-living and AsyncAPI-documented publisher object.</span>
-<a id=__codelineno-0-323 name=__codelineno-0-323></a>
-<a id=__codelineno-0-324 name=__codelineno-0-324></a><span class=sd>    You can use it as a handler decorator (handler should be decorated by `@broker.subscriber(...)` too) - `@broker.publisher(...)`.</span>
-<a id=__codelineno-0-325 name=__codelineno-0-325></a><span class=sd>    In such case publisher will publish your handler return value.</span>
-<a id=__codelineno-0-326 name=__codelineno-0-326></a>
-<a id=__codelineno-0-327 name=__codelineno-0-327></a><span class=sd>    Or you can create a publisher object to call it lately - `broker.publisher(...).publish(...)`.</span>
-<a id=__codelineno-0-328 name=__codelineno-0-328></a><span class=sd>    &quot;&quot;&quot;</span>
-<a id=__codelineno-0-329 name=__codelineno-0-329></a>    <span class=n>stream</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>create</span><span class=p>(</span><span class=n>stream</span><span class=p>)</span>
-<a id=__codelineno-0-330 name=__codelineno-0-330></a>
-<a id=__codelineno-0-331 name=__codelineno-0-331></a>    <span class=n>publisher</span> <span class=o>=</span> <span class=n>cast</span><span class=p>(</span>
-<a id=__codelineno-0-332 name=__codelineno-0-332></a>        <span class=s2>&quot;AsyncAPIPublisher&quot;</span><span class=p>,</span>
-<a id=__codelineno-0-333 name=__codelineno-0-333></a>        <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=n>publisher</span><span class=p>(</span>
-<a id=__codelineno-0-334 name=__codelineno-0-334></a>            <span class=n>publisher</span><span class=o>=</span><span class=n>AsyncAPIPublisher</span><span class=o>.</span><span class=n>create</span><span class=p>(</span>
-<a id=__codelineno-0-335 name=__codelineno-0-335></a>                <span class=n>subject</span><span class=o>=</span><span class=n>subject</span><span class=p>,</span>
-<a id=__codelineno-0-336 name=__codelineno-0-336></a>                <span class=n>headers</span><span class=o>=</span><span class=n>headers</span><span class=p>,</span>
-<a id=__codelineno-0-337 name=__codelineno-0-337></a>                <span class=c1># Core</span>
-<a id=__codelineno-0-338 name=__codelineno-0-338></a>                <span class=n>reply_to</span><span class=o>=</span><span class=n>reply_to</span><span class=p>,</span>
-<a id=__codelineno-0-339 name=__codelineno-0-339></a>                <span class=c1># JS</span>
-<a id=__codelineno-0-340 name=__codelineno-0-340></a>                <span class=n>timeout</span><span class=o>=</span><span class=n>timeout</span><span class=p>,</span>
-<a id=__codelineno-0-341 name=__codelineno-0-341></a>                <span class=n>stream</span><span class=o>=</span><span class=n>stream</span><span class=p>,</span>
-<a id=__codelineno-0-342 name=__codelineno-0-342></a>                <span class=c1># Specific</span>
-<a id=__codelineno-0-343 name=__codelineno-0-343></a>                <span class=n>broker_middlewares</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_middlewares</span><span class=p>,</span>
-<a id=__codelineno-0-344 name=__codelineno-0-344></a>                <span class=n>middlewares</span><span class=o>=</span><span class=n>middlewares</span><span class=p>,</span>
-<a id=__codelineno-0-345 name=__codelineno-0-345></a>                <span class=c1># AsyncAPI</span>
-<a id=__codelineno-0-346 name=__codelineno-0-346></a>                <span class=n>title_</span><span class=o>=</span><span class=n>title</span><span class=p>,</span>
-<a id=__codelineno-0-347 name=__codelineno-0-347></a>                <span class=n>description_</span><span class=o>=</span><span class=n>description</span><span class=p>,</span>
-<a id=__codelineno-0-348 name=__codelineno-0-348></a>                <span class=n>schema_</span><span class=o>=</span><span class=n>schema</span><span class=p>,</span>
-<a id=__codelineno-0-349 name=__codelineno-0-349></a>                <span class=n>include_in_schema</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_solve_include_in_schema</span><span class=p>(</span><span class=n>include_in_schema</span><span class=p>),</span>
-<a id=__codelineno-0-350 name=__codelineno-0-350></a>            <span class=p>)</span>
-<a id=__codelineno-0-351 name=__codelineno-0-351></a>        <span class=p>),</span>
-<a id=__codelineno-0-352 name=__codelineno-0-352></a>    <span class=p>)</span>
-<a id=__codelineno-0-353 name=__codelineno-0-353></a>
-<a id=__codelineno-0-354 name=__codelineno-0-354></a>    <span class=k>if</span> <span class=n>stream</span> <span class=ow>and</span> <span class=n>publisher</span><span class=o>.</span><span class=n>subject</span><span class=p>:</span>
-<a id=__codelineno-0-355 name=__codelineno-0-355></a>        <span class=n>stream</span><span class=o>.</span><span class=n>add_subject</span><span class=p>(</span><span class=n>publisher</span><span class=o>.</span><span class=n>subject</span><span class=p>)</span>
-<a id=__codelineno-0-356 name=__codelineno-0-356></a>
-<a id=__codelineno-0-357 name=__codelineno-0-357></a>    <span class=k>return</span> <span class=n>publisher</span>
+<span class=normal><a href=#__codelineno-0-357>357</a></span>
+<span class=normal><a href=#__codelineno-0-358>358</a></span>
+<span class=normal><a href=#__codelineno-0-359>359</a></span>
+<span class=normal><a href=#__codelineno-0-360>360</a></span>
+<span class=normal><a href=#__codelineno-0-361>361</a></span>
+<span class=normal><a href=#__codelineno-0-362>362</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-269 name=__codelineno-0-269></a><span class=nd>@override</span>
+<a id=__codelineno-0-270 name=__codelineno-0-270></a><span class=k>def</span><span class=w> </span><span class=nf>publisher</span><span class=p>(</span>  <span class=c1># type: ignore[override]</span>
+<a id=__codelineno-0-271 name=__codelineno-0-271></a>    <span class=bp>self</span><span class=p>,</span>
+<a id=__codelineno-0-272 name=__codelineno-0-272></a>    <span class=n>subject</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-273 name=__codelineno-0-273></a>        <span class=nb>str</span><span class=p>,</span>
+<a id=__codelineno-0-274 name=__codelineno-0-274></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;NATS subject to send message.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-275 name=__codelineno-0-275></a>    <span class=p>],</span>
+<a id=__codelineno-0-276 name=__codelineno-0-276></a>    <span class=o>*</span><span class=p>,</span>
+<a id=__codelineno-0-277 name=__codelineno-0-277></a>    <span class=n>headers</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-278 name=__codelineno-0-278></a>        <span class=n>Optional</span><span class=p>[</span><span class=n>Dict</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=nb>str</span><span class=p>]],</span>
+<a id=__codelineno-0-279 name=__codelineno-0-279></a>        <span class=n>Doc</span><span class=p>(</span>
+<a id=__codelineno-0-280 name=__codelineno-0-280></a>            <span class=s2>&quot;Message headers to store metainformation. &quot;</span>
+<a id=__codelineno-0-281 name=__codelineno-0-281></a>            <span class=s2>&quot;**content-type** and **correlation_id** will be set automatically by framework anyway. &quot;</span>
+<a id=__codelineno-0-282 name=__codelineno-0-282></a>            <span class=s2>&quot;Can be overridden by `publish.headers` if specified.&quot;</span>
+<a id=__codelineno-0-283 name=__codelineno-0-283></a>        <span class=p>),</span>
+<a id=__codelineno-0-284 name=__codelineno-0-284></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-285 name=__codelineno-0-285></a>    <span class=n>reply_to</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-286 name=__codelineno-0-286></a>        <span class=nb>str</span><span class=p>,</span>
+<a id=__codelineno-0-287 name=__codelineno-0-287></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;NATS subject name to send response.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-288 name=__codelineno-0-288></a>    <span class=p>]</span> <span class=o>=</span> <span class=s2>&quot;&quot;</span><span class=p>,</span>
+<a id=__codelineno-0-289 name=__codelineno-0-289></a>    <span class=c1># JS</span>
+<a id=__codelineno-0-290 name=__codelineno-0-290></a>    <span class=n>stream</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-291 name=__codelineno-0-291></a>        <span class=n>Union</span><span class=p>[</span><span class=nb>str</span><span class=p>,</span> <span class=s2>&quot;JStream&quot;</span><span class=p>,</span> <span class=kc>None</span><span class=p>],</span>
+<a id=__codelineno-0-292 name=__codelineno-0-292></a>        <span class=n>Doc</span><span class=p>(</span>
+<a id=__codelineno-0-293 name=__codelineno-0-293></a>            <span class=s2>&quot;This option validates that the target `subject` is in presented stream. &quot;</span>
+<a id=__codelineno-0-294 name=__codelineno-0-294></a>            <span class=s2>&quot;Can be omitted without any effect.&quot;</span>
+<a id=__codelineno-0-295 name=__codelineno-0-295></a>        <span class=p>),</span>
+<a id=__codelineno-0-296 name=__codelineno-0-296></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-297 name=__codelineno-0-297></a>    <span class=n>timeout</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-298 name=__codelineno-0-298></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>float</span><span class=p>],</span>
+<a id=__codelineno-0-299 name=__codelineno-0-299></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Timeout to send message to NATS.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-300 name=__codelineno-0-300></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-301 name=__codelineno-0-301></a>    <span class=c1># basic args</span>
+<a id=__codelineno-0-302 name=__codelineno-0-302></a>    <span class=n>middlewares</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-303 name=__codelineno-0-303></a>        <span class=n>Sequence</span><span class=p>[</span><span class=s2>&quot;PublisherMiddleware&quot;</span><span class=p>],</span>
+<a id=__codelineno-0-304 name=__codelineno-0-304></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Publisher middlewares to wrap outgoing messages.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-305 name=__codelineno-0-305></a>    <span class=p>]</span> <span class=o>=</span> <span class=p>(),</span>
+<a id=__codelineno-0-306 name=__codelineno-0-306></a>    <span class=c1># AsyncAPI information</span>
+<a id=__codelineno-0-307 name=__codelineno-0-307></a>    <span class=n>title</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-308 name=__codelineno-0-308></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
+<a id=__codelineno-0-309 name=__codelineno-0-309></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;AsyncAPI publisher object title.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-310 name=__codelineno-0-310></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-311 name=__codelineno-0-311></a>    <span class=n>description</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-312 name=__codelineno-0-312></a>        <span class=n>Optional</span><span class=p>[</span><span class=nb>str</span><span class=p>],</span>
+<a id=__codelineno-0-313 name=__codelineno-0-313></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;AsyncAPI publisher object description.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-314 name=__codelineno-0-314></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-315 name=__codelineno-0-315></a>    <span class=n>schema</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-316 name=__codelineno-0-316></a>        <span class=n>Optional</span><span class=p>[</span><span class=n>Any</span><span class=p>],</span>
+<a id=__codelineno-0-317 name=__codelineno-0-317></a>        <span class=n>Doc</span><span class=p>(</span>
+<a id=__codelineno-0-318 name=__codelineno-0-318></a>            <span class=s2>&quot;AsyncAPI publishing message type. &quot;</span>
+<a id=__codelineno-0-319 name=__codelineno-0-319></a>            <span class=s2>&quot;Should be any python-native object annotation or `pydantic.BaseModel`.&quot;</span>
+<a id=__codelineno-0-320 name=__codelineno-0-320></a>        <span class=p>),</span>
+<a id=__codelineno-0-321 name=__codelineno-0-321></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-322 name=__codelineno-0-322></a>    <span class=n>include_in_schema</span><span class=p>:</span> <span class=n>Annotated</span><span class=p>[</span>
+<a id=__codelineno-0-323 name=__codelineno-0-323></a>        <span class=nb>bool</span><span class=p>,</span>
+<a id=__codelineno-0-324 name=__codelineno-0-324></a>        <span class=n>Doc</span><span class=p>(</span><span class=s2>&quot;Whetever to include operation in AsyncAPI schema or not.&quot;</span><span class=p>),</span>
+<a id=__codelineno-0-325 name=__codelineno-0-325></a>    <span class=p>]</span> <span class=o>=</span> <span class=kc>True</span><span class=p>,</span>
+<a id=__codelineno-0-326 name=__codelineno-0-326></a><span class=p>)</span> <span class=o>-&gt;</span> <span class=s2>&quot;AsyncAPIPublisher&quot;</span><span class=p>:</span>
+<a id=__codelineno-0-327 name=__codelineno-0-327></a><span class=w>    </span><span class=sd>&quot;&quot;&quot;Creates long-living and AsyncAPI-documented publisher object.</span>
+<a id=__codelineno-0-328 name=__codelineno-0-328></a>
+<a id=__codelineno-0-329 name=__codelineno-0-329></a><span class=sd>    You can use it as a handler decorator (handler should be decorated by `@broker.subscriber(...)` too) - `@broker.publisher(...)`.</span>
+<a id=__codelineno-0-330 name=__codelineno-0-330></a><span class=sd>    In such case publisher will publish your handler return value.</span>
+<a id=__codelineno-0-331 name=__codelineno-0-331></a>
+<a id=__codelineno-0-332 name=__codelineno-0-332></a><span class=sd>    Or you can create a publisher object to call it lately - `broker.publisher(...).publish(...)`.</span>
+<a id=__codelineno-0-333 name=__codelineno-0-333></a><span class=sd>    &quot;&quot;&quot;</span>
+<a id=__codelineno-0-334 name=__codelineno-0-334></a>    <span class=n>stream</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>create</span><span class=p>(</span><span class=n>stream</span><span class=p>)</span>
+<a id=__codelineno-0-335 name=__codelineno-0-335></a>
+<a id=__codelineno-0-336 name=__codelineno-0-336></a>    <span class=n>publisher</span> <span class=o>=</span> <span class=n>cast</span><span class=p>(</span>
+<a id=__codelineno-0-337 name=__codelineno-0-337></a>        <span class=s2>&quot;AsyncAPIPublisher&quot;</span><span class=p>,</span>
+<a id=__codelineno-0-338 name=__codelineno-0-338></a>        <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=n>publisher</span><span class=p>(</span>
+<a id=__codelineno-0-339 name=__codelineno-0-339></a>            <span class=n>publisher</span><span class=o>=</span><span class=n>AsyncAPIPublisher</span><span class=o>.</span><span class=n>create</span><span class=p>(</span>
+<a id=__codelineno-0-340 name=__codelineno-0-340></a>                <span class=n>subject</span><span class=o>=</span><span class=n>subject</span><span class=p>,</span>
+<a id=__codelineno-0-341 name=__codelineno-0-341></a>                <span class=n>headers</span><span class=o>=</span><span class=n>headers</span><span class=p>,</span>
+<a id=__codelineno-0-342 name=__codelineno-0-342></a>                <span class=c1># Core</span>
+<a id=__codelineno-0-343 name=__codelineno-0-343></a>                <span class=n>reply_to</span><span class=o>=</span><span class=n>reply_to</span><span class=p>,</span>
+<a id=__codelineno-0-344 name=__codelineno-0-344></a>                <span class=c1># JS</span>
+<a id=__codelineno-0-345 name=__codelineno-0-345></a>                <span class=n>timeout</span><span class=o>=</span><span class=n>timeout</span><span class=p>,</span>
+<a id=__codelineno-0-346 name=__codelineno-0-346></a>                <span class=n>stream</span><span class=o>=</span><span class=n>stream</span><span class=p>,</span>
+<a id=__codelineno-0-347 name=__codelineno-0-347></a>                <span class=c1># Specific</span>
+<a id=__codelineno-0-348 name=__codelineno-0-348></a>                <span class=n>broker_middlewares</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_middlewares</span><span class=p>,</span>
+<a id=__codelineno-0-349 name=__codelineno-0-349></a>                <span class=n>middlewares</span><span class=o>=</span><span class=n>middlewares</span><span class=p>,</span>
+<a id=__codelineno-0-350 name=__codelineno-0-350></a>                <span class=c1># AsyncAPI</span>
+<a id=__codelineno-0-351 name=__codelineno-0-351></a>                <span class=n>title_</span><span class=o>=</span><span class=n>title</span><span class=p>,</span>
+<a id=__codelineno-0-352 name=__codelineno-0-352></a>                <span class=n>description_</span><span class=o>=</span><span class=n>description</span><span class=p>,</span>
+<a id=__codelineno-0-353 name=__codelineno-0-353></a>                <span class=n>schema_</span><span class=o>=</span><span class=n>schema</span><span class=p>,</span>
+<a id=__codelineno-0-354 name=__codelineno-0-354></a>                <span class=n>include_in_schema</span><span class=o>=</span><span class=bp>self</span><span class=o>.</span><span class=n>_solve_include_in_schema</span><span class=p>(</span><span class=n>include_in_schema</span><span class=p>),</span>
+<a id=__codelineno-0-355 name=__codelineno-0-355></a>            <span class=p>)</span>
+<a id=__codelineno-0-356 name=__codelineno-0-356></a>        <span class=p>),</span>
+<a id=__codelineno-0-357 name=__codelineno-0-357></a>    <span class=p>)</span>
+<a id=__codelineno-0-358 name=__codelineno-0-358></a>
+<a id=__codelineno-0-359 name=__codelineno-0-359></a>    <span class=k>if</span> <span class=n>stream</span> <span class=ow>and</span> <span class=n>publisher</span><span class=o>.</span><span class=n>subject</span><span class=p>:</span>
+<a id=__codelineno-0-360 name=__codelineno-0-360></a>        <span class=n>stream</span><span class=o>.</span><span class=n>add_subject</span><span class=p>(</span><span class=n>publisher</span><span class=o>.</span><span class=n>subject</span><span class=p>)</span>
+<a id=__codelineno-0-361 name=__codelineno-0-361></a>
+<a id=__codelineno-0-362 name=__codelineno-0-362></a>    <span class=k>return</span> <span class=n>publisher</span>
 </code></pre></div></td></tr></table></div> </details> </div> </div> <div class="doc doc-object doc-function"> <h3 id=faststream.nats.broker.NatsBroker.include_router class="doc doc-heading"> <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <span class="doc doc-object-name doc-function-name">include_router</span> <a href=#faststream.nats.broker.NatsBroker.include_router class=headerlink title="Permanent link">#</a></h3> <div class="doc-signature highlight"><pre><span></span><code><a id=__codelineno-0-1 name=__codelineno-0-1 href=#__codelineno-0-1></a><span class=nf>include_router</span><span class=p>(</span>
 <a id=__codelineno-0-2 name=__codelineno-0-2 href=#__codelineno-0-2></a>    <span class=n>router</span><span class=p>,</span>
 <a id=__codelineno-0-3 name=__codelineno-0-3 href=#__codelineno-0-3></a>    <span class=o>*</span><span class=p>,</span>
@@ -1458,12 +1468,7 @@
 <a id=__codelineno-0-6 name=__codelineno-0-6 href=#__codelineno-0-6></a>    <span class=n>middlewares</span><span class=o>=</span><span class=p>(),</span>
 <a id=__codelineno-0-7 name=__codelineno-0-7 href=#__codelineno-0-7></a>    <span class=n>include_in_schema</span><span class=o>=</span><span class=kc>None</span><span class=p>,</span>
 <a id=__codelineno-0-8 name=__codelineno-0-8 href=#__codelineno-0-8></a><span class=p>)</span>
-</code></pre></div> <div class="doc doc-contents "> <details class=quote> <summary>Source code in <code>faststream/nats/broker/registrator.py</code></summary> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-0-359>359</a></span>
-<span class=normal><a href=#__codelineno-0-360>360</a></span>
-<span class=normal><a href=#__codelineno-0-361>361</a></span>
-<span class=normal><a href=#__codelineno-0-362>362</a></span>
-<span class=normal><a href=#__codelineno-0-363>363</a></span>
-<span class=normal><a href=#__codelineno-0-364>364</a></span>
+</code></pre></div> <div class="doc doc-contents "> <details class=quote> <summary>Source code in <code>faststream/nats/broker/registrator.py</code></summary> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-0-364>364</a></span>
 <span class=normal><a href=#__codelineno-0-365>365</a></span>
 <span class=normal><a href=#__codelineno-0-366>366</a></span>
 <span class=normal><a href=#__codelineno-0-367>367</a></span>
@@ -1496,45 +1501,50 @@
 <span class=normal><a href=#__codelineno-0-394>394</a></span>
 <span class=normal><a href=#__codelineno-0-395>395</a></span>
 <span class=normal><a href=#__codelineno-0-396>396</a></span>
-<span class=normal><a href=#__codelineno-0-397>397</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-359 name=__codelineno-0-359></a><span class=nd>@override</span>
-<a id=__codelineno-0-360 name=__codelineno-0-360></a><span class=k>def</span><span class=w> </span><span class=nf>include_router</span><span class=p>(</span>
-<a id=__codelineno-0-361 name=__codelineno-0-361></a>    <span class=bp>self</span><span class=p>,</span>
-<a id=__codelineno-0-362 name=__codelineno-0-362></a>    <span class=n>router</span><span class=p>:</span> <span class=s2>&quot;NatsRegistrator&quot;</span><span class=p>,</span>  <span class=c1># type: ignore[override]</span>
-<a id=__codelineno-0-363 name=__codelineno-0-363></a>    <span class=o>*</span><span class=p>,</span>
-<a id=__codelineno-0-364 name=__codelineno-0-364></a>    <span class=n>prefix</span><span class=p>:</span> <span class=nb>str</span> <span class=o>=</span> <span class=s2>&quot;&quot;</span><span class=p>,</span>
-<a id=__codelineno-0-365 name=__codelineno-0-365></a>    <span class=n>dependencies</span><span class=p>:</span> <span class=n>Iterable</span><span class=p>[</span><span class=s2>&quot;Depends&quot;</span><span class=p>]</span> <span class=o>=</span> <span class=p>(),</span>
-<a id=__codelineno-0-366 name=__codelineno-0-366></a>    <span class=n>middlewares</span><span class=p>:</span> <span class=n>Iterable</span><span class=p>[</span><span class=s2>&quot;BrokerMiddleware[Msg]&quot;</span><span class=p>]</span> <span class=o>=</span> <span class=p>(),</span>
-<a id=__codelineno-0-367 name=__codelineno-0-367></a>    <span class=n>include_in_schema</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>bool</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
-<a id=__codelineno-0-368 name=__codelineno-0-368></a><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
-<a id=__codelineno-0-369 name=__codelineno-0-369></a>    <span class=k>if</span> <span class=ow>not</span> <span class=nb>isinstance</span><span class=p>(</span><span class=n>router</span><span class=p>,</span> <span class=n>NatsRegistrator</span><span class=p>):</span>
-<a id=__codelineno-0-370 name=__codelineno-0-370></a>        <span class=n>msg</span> <span class=o>=</span> <span class=p>(</span>
-<a id=__codelineno-0-371 name=__codelineno-0-371></a>            <span class=sa>f</span><span class=s2>&quot;Router must be an instance of NatsRegistrator, &quot;</span>
-<a id=__codelineno-0-372 name=__codelineno-0-372></a>            <span class=sa>f</span><span class=s2>&quot;got </span><span class=si>{</span><span class=nb>type</span><span class=p>(</span><span class=n>router</span><span class=p>)</span><span class=o>.</span><span class=vm>__name__</span><span class=si>}</span><span class=s2> instead&quot;</span>
-<a id=__codelineno-0-373 name=__codelineno-0-373></a>        <span class=p>)</span>
-<a id=__codelineno-0-374 name=__codelineno-0-374></a>        <span class=k>raise</span> <span class=n>SetupError</span><span class=p>(</span><span class=n>msg</span><span class=p>)</span>
-<a id=__codelineno-0-375 name=__codelineno-0-375></a>
-<a id=__codelineno-0-376 name=__codelineno-0-376></a>    <span class=n>sub_streams</span> <span class=o>=</span> <span class=n>router</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>objects</span><span class=o>.</span><span class=n>copy</span><span class=p>()</span>
-<a id=__codelineno-0-377 name=__codelineno-0-377></a>
-<a id=__codelineno-0-378 name=__codelineno-0-378></a>    <span class=n>sub_router_subjects</span> <span class=o>=</span> <span class=p>[</span><span class=n>sub</span><span class=o>.</span><span class=n>subject</span> <span class=k>for</span> <span class=n>sub</span> <span class=ow>in</span> <span class=n>router</span><span class=o>.</span><span class=n>_subscribers</span><span class=o>.</span><span class=n>values</span><span class=p>()]</span>
-<a id=__codelineno-0-379 name=__codelineno-0-379></a>
-<a id=__codelineno-0-380 name=__codelineno-0-380></a>    <span class=k>for</span> <span class=n>stream</span> <span class=ow>in</span> <span class=n>sub_streams</span><span class=o>.</span><span class=n>values</span><span class=p>():</span>
-<a id=__codelineno-0-381 name=__codelineno-0-381></a>        <span class=n>new_subjects</span> <span class=o>=</span> <span class=p>[]</span>
-<a id=__codelineno-0-382 name=__codelineno-0-382></a>        <span class=k>for</span> <span class=n>subj</span> <span class=ow>in</span> <span class=n>stream</span><span class=o>.</span><span class=n>subjects</span><span class=p>:</span>
-<a id=__codelineno-0-383 name=__codelineno-0-383></a>            <span class=k>if</span> <span class=n>subj</span> <span class=ow>in</span> <span class=n>sub_router_subjects</span><span class=p>:</span>
-<a id=__codelineno-0-384 name=__codelineno-0-384></a>                <span class=n>new_subjects</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&quot;&quot;</span><span class=o>.</span><span class=n>join</span><span class=p>((</span><span class=bp>self</span><span class=o>.</span><span class=n>prefix</span><span class=p>,</span> <span class=n>subj</span><span class=p>)))</span>
-<a id=__codelineno-0-385 name=__codelineno-0-385></a>            <span class=k>else</span><span class=p>:</span>
-<a id=__codelineno-0-386 name=__codelineno-0-386></a>                <span class=n>new_subjects</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>subj</span><span class=p>)</span>
-<a id=__codelineno-0-387 name=__codelineno-0-387></a>        <span class=n>stream</span><span class=o>.</span><span class=n>subjects</span> <span class=o>=</span> <span class=n>new_subjects</span>
-<a id=__codelineno-0-388 name=__codelineno-0-388></a>
-<a id=__codelineno-0-389 name=__codelineno-0-389></a>    <span class=bp>self</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>objects</span><span class=o>.</span><span class=n>update</span><span class=p>(</span><span class=n>sub_streams</span><span class=p>)</span>
-<a id=__codelineno-0-390 name=__codelineno-0-390></a>
-<a id=__codelineno-0-391 name=__codelineno-0-391></a>    <span class=k>return</span> <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=n>include_router</span><span class=p>(</span>
-<a id=__codelineno-0-392 name=__codelineno-0-392></a>        <span class=n>router</span><span class=p>,</span>
-<a id=__codelineno-0-393 name=__codelineno-0-393></a>        <span class=n>prefix</span><span class=o>=</span><span class=n>prefix</span><span class=p>,</span>
-<a id=__codelineno-0-394 name=__codelineno-0-394></a>        <span class=n>dependencies</span><span class=o>=</span><span class=n>dependencies</span><span class=p>,</span>
-<a id=__codelineno-0-395 name=__codelineno-0-395></a>        <span class=n>middlewares</span><span class=o>=</span><span class=n>middlewares</span><span class=p>,</span>
-<a id=__codelineno-0-396 name=__codelineno-0-396></a>        <span class=n>include_in_schema</span><span class=o>=</span><span class=n>include_in_schema</span><span class=p>,</span>
-<a id=__codelineno-0-397 name=__codelineno-0-397></a>    <span class=p>)</span>
+<span class=normal><a href=#__codelineno-0-397>397</a></span>
+<span class=normal><a href=#__codelineno-0-398>398</a></span>
+<span class=normal><a href=#__codelineno-0-399>399</a></span>
+<span class=normal><a href=#__codelineno-0-400>400</a></span>
+<span class=normal><a href=#__codelineno-0-401>401</a></span>
+<span class=normal><a href=#__codelineno-0-402>402</a></span></pre></div></td><td class=code><div><pre><span></span><code><a id=__codelineno-0-364 name=__codelineno-0-364></a><span class=nd>@override</span>
+<a id=__codelineno-0-365 name=__codelineno-0-365></a><span class=k>def</span><span class=w> </span><span class=nf>include_router</span><span class=p>(</span>
+<a id=__codelineno-0-366 name=__codelineno-0-366></a>    <span class=bp>self</span><span class=p>,</span>
+<a id=__codelineno-0-367 name=__codelineno-0-367></a>    <span class=n>router</span><span class=p>:</span> <span class=s2>&quot;NatsRegistrator&quot;</span><span class=p>,</span>  <span class=c1># type: ignore[override]</span>
+<a id=__codelineno-0-368 name=__codelineno-0-368></a>    <span class=o>*</span><span class=p>,</span>
+<a id=__codelineno-0-369 name=__codelineno-0-369></a>    <span class=n>prefix</span><span class=p>:</span> <span class=nb>str</span> <span class=o>=</span> <span class=s2>&quot;&quot;</span><span class=p>,</span>
+<a id=__codelineno-0-370 name=__codelineno-0-370></a>    <span class=n>dependencies</span><span class=p>:</span> <span class=n>Iterable</span><span class=p>[</span><span class=s2>&quot;Depends&quot;</span><span class=p>]</span> <span class=o>=</span> <span class=p>(),</span>
+<a id=__codelineno-0-371 name=__codelineno-0-371></a>    <span class=n>middlewares</span><span class=p>:</span> <span class=n>Iterable</span><span class=p>[</span><span class=s2>&quot;BrokerMiddleware[Msg]&quot;</span><span class=p>]</span> <span class=o>=</span> <span class=p>(),</span>
+<a id=__codelineno-0-372 name=__codelineno-0-372></a>    <span class=n>include_in_schema</span><span class=p>:</span> <span class=n>Optional</span><span class=p>[</span><span class=nb>bool</span><span class=p>]</span> <span class=o>=</span> <span class=kc>None</span><span class=p>,</span>
+<a id=__codelineno-0-373 name=__codelineno-0-373></a><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
+<a id=__codelineno-0-374 name=__codelineno-0-374></a>    <span class=k>if</span> <span class=ow>not</span> <span class=nb>isinstance</span><span class=p>(</span><span class=n>router</span><span class=p>,</span> <span class=n>NatsRegistrator</span><span class=p>):</span>
+<a id=__codelineno-0-375 name=__codelineno-0-375></a>        <span class=n>msg</span> <span class=o>=</span> <span class=p>(</span>
+<a id=__codelineno-0-376 name=__codelineno-0-376></a>            <span class=sa>f</span><span class=s2>&quot;Router must be an instance of NatsRegistrator, &quot;</span>
+<a id=__codelineno-0-377 name=__codelineno-0-377></a>            <span class=sa>f</span><span class=s2>&quot;got </span><span class=si>{</span><span class=nb>type</span><span class=p>(</span><span class=n>router</span><span class=p>)</span><span class=o>.</span><span class=vm>__name__</span><span class=si>}</span><span class=s2> instead&quot;</span>
+<a id=__codelineno-0-378 name=__codelineno-0-378></a>        <span class=p>)</span>
+<a id=__codelineno-0-379 name=__codelineno-0-379></a>        <span class=k>raise</span> <span class=n>SetupError</span><span class=p>(</span><span class=n>msg</span><span class=p>)</span>
+<a id=__codelineno-0-380 name=__codelineno-0-380></a>
+<a id=__codelineno-0-381 name=__codelineno-0-381></a>    <span class=n>sub_streams</span> <span class=o>=</span> <span class=n>router</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>objects</span><span class=o>.</span><span class=n>copy</span><span class=p>()</span>
+<a id=__codelineno-0-382 name=__codelineno-0-382></a>
+<a id=__codelineno-0-383 name=__codelineno-0-383></a>    <span class=n>sub_router_subjects</span> <span class=o>=</span> <span class=p>[</span><span class=n>sub</span><span class=o>.</span><span class=n>subject</span> <span class=k>for</span> <span class=n>sub</span> <span class=ow>in</span> <span class=n>router</span><span class=o>.</span><span class=n>_subscribers</span><span class=o>.</span><span class=n>values</span><span class=p>()]</span>
+<a id=__codelineno-0-384 name=__codelineno-0-384></a>
+<a id=__codelineno-0-385 name=__codelineno-0-385></a>    <span class=k>for</span> <span class=n>stream</span> <span class=ow>in</span> <span class=n>sub_streams</span><span class=o>.</span><span class=n>values</span><span class=p>():</span>
+<a id=__codelineno-0-386 name=__codelineno-0-386></a>        <span class=n>new_subjects</span> <span class=o>=</span> <span class=p>[]</span>
+<a id=__codelineno-0-387 name=__codelineno-0-387></a>        <span class=k>for</span> <span class=n>subj</span> <span class=ow>in</span> <span class=n>stream</span><span class=o>.</span><span class=n>subjects</span><span class=p>:</span>
+<a id=__codelineno-0-388 name=__codelineno-0-388></a>            <span class=k>if</span> <span class=n>subj</span> <span class=ow>in</span> <span class=n>sub_router_subjects</span><span class=p>:</span>
+<a id=__codelineno-0-389 name=__codelineno-0-389></a>                <span class=n>new_subjects</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=s2>&quot;&quot;</span><span class=o>.</span><span class=n>join</span><span class=p>((</span><span class=bp>self</span><span class=o>.</span><span class=n>prefix</span><span class=p>,</span> <span class=n>subj</span><span class=p>)))</span>
+<a id=__codelineno-0-390 name=__codelineno-0-390></a>            <span class=k>else</span><span class=p>:</span>
+<a id=__codelineno-0-391 name=__codelineno-0-391></a>                <span class=n>new_subjects</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=n>subj</span><span class=p>)</span>
+<a id=__codelineno-0-392 name=__codelineno-0-392></a>        <span class=n>stream</span><span class=o>.</span><span class=n>subjects</span> <span class=o>=</span> <span class=n>new_subjects</span>
+<a id=__codelineno-0-393 name=__codelineno-0-393></a>
+<a id=__codelineno-0-394 name=__codelineno-0-394></a>    <span class=bp>self</span><span class=o>.</span><span class=n>_stream_builder</span><span class=o>.</span><span class=n>objects</span><span class=o>.</span><span class=n>update</span><span class=p>(</span><span class=n>sub_streams</span><span class=p>)</span>
+<a id=__codelineno-0-395 name=__codelineno-0-395></a>
+<a id=__codelineno-0-396 name=__codelineno-0-396></a>    <span class=k>return</span> <span class=nb>super</span><span class=p>()</span><span class=o>.</span><span class=n>include_router</span><span class=p>(</span>
+<a id=__codelineno-0-397 name=__codelineno-0-397></a>        <span class=n>router</span><span class=p>,</span>
+<a id=__codelineno-0-398 name=__codelineno-0-398></a>        <span class=n>prefix</span><span class=o>=</span><span class=n>prefix</span><span class=p>,</span>
+<a id=__codelineno-0-399 name=__codelineno-0-399></a>        <span class=n>dependencies</span><span class=o>=</span><span class=n>dependencies</span><span class=p>,</span>
+<a id=__codelineno-0-400 name=__codelineno-0-400></a>        <span class=n>middlewares</span><span class=o>=</span><span class=n>middlewares</span><span class=p>,</span>
+<a id=__codelineno-0-401 name=__codelineno-0-401></a>        <span class=n>include_in_schema</span><span class=o>=</span><span class=n>include_in_schema</span><span class=p>,</span>
+<a id=__codelineno-0-402 name=__codelineno-0-402></a>    <span class=p>)</span>
 </code></pre></div></td></tr></table></div> </details> </div> </div> <div class="doc doc-object doc-function"> <h3 id=faststream.nats.broker.NatsBroker.include_routers class="doc doc-heading"> <code class="doc-symbol doc-symbol-heading doc-symbol-method"></code> <span class="doc doc-object-name doc-function-name">include_routers</span> <a href=#faststream.nats.broker.NatsBroker.include_routers class=headerlink title="Permanent link">#</a></h3> <div class="doc-signature highlight"><pre><span></span><code><a id=__codelineno-0-1 name=__codelineno-0-1 href=#__codelineno-0-1></a><span class=nf>include_routers</span><span class=p>(</span><span class=o>*</span><span class=n>routers</span><span class=p>)</span>
 </code></pre></div> <div class="doc doc-contents "> <p>Includes routers in the object.</p> <details class=quote> <summary>Source code in <code>faststream/broker/core/abc.py</code></summary> <div class=highlight><table class=highlighttable><tr><td class=linenos><div class=linenodiv><pre><span></span><span class=normal><a href=#__codelineno-0-136>136</a></span>
 <span class=normal><a href=#__codelineno-0-137>137</a></span>
